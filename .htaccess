@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.)?f3-h.de$
+RewriteCond %{REQUEST_URI} !^/main/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /main/$1
+RewriteCond %{HTTP_HOST} ^(www.)?f3-h.de$
+RewriteRule ^(/)?$ main/ [L]
