@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>cuboino | f3h</title>
+
+<link href='http://fonts.googleapis.com/css?family=Volkhov:400,400italic,700,700italic|Raleway:400,500,600' rel='stylesheet' type='text/css'>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.parallax-1.1.js"></script>
+<script type="text/javascript" src="js/parallax-config.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+<script type="text/javascript" src="js/animatedcollapse.js"></script>
+<script type="text/javascript">
+	animatedcollapse.addDiv('actor-light', 'fade=0,speed=400,group=cubes,hide=1')
+	animatedcollapse.addDiv('actor-sound', 'fade=0,speed=400,group=cubes,hide=1')
+	animatedcollapse.addDiv('actor-shunting', 'fade=0,speed=400,group=cubes,hide=1')
+	animatedcollapse.addDiv('actor-release', 'fade=0,speed=400,group=cubes,hide=1')
+	
+	animatedcollapse.addDiv('sensor-light', 'fade=0,speed=400,group=cubes,hide=1')
+	animatedcollapse.addDiv('sensor-sound', 'fade=0,speed=400,group=cubes,hide=1')
+	animatedcollapse.addDiv('sensor-marble', 'fade=0,speed=400,group=cubes,hide=1')
+	animatedcollapse.addDiv('sensor-button', 'fade=0,speed=400,group=cubes,hide=1')
+	
+	animatedcollapse.addDiv('supply-energy', 'fade=0,speed=400,group=cubes,hide=1')
+	animatedcollapse.addDiv('supply-connection', 'fade=0,speed=400,group=cubes,hide=1')
+	
+	
+	
+	animatedcollapse.addDiv('network-marble_distributor', 'fade=0,speed=400,group=networks,hide=1')
+	animatedcollapse.addDiv('network-remote_marble_distributor', 'fade=0,speed=400,group=networks,hide=1')
+	animatedcollapse.addDiv('network-multiplexing', 'fade=0,speed=400,group=networks,hide=1')
+	animatedcollapse.addDiv('network-infinity_loop', 'fade=0,speed=400,group=networks,hide=1')
+	
+
+
+	animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is expanded/contracted
+	//$: Access to jQuery
+	//divobj: DOM reference to DIV being expanded/ collapsed. Use "divobj.id" to get its ID
+	//state: "block" or "none", depending on state
+	}
+
+	animatedcollapse.init()
+</script>
+
+
+
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/pie.js"></script>
+<script type="text/javascript" src="js/pie-config.js"></script>
+<![endif]-->
+</head>
+
+
+<body>
+    
+	<!-- f3 top bar -->
+	<div class="f3h-top">		    
+	    <a href="../aila/">&laquo; aila</a>
+        <a href="../main/" >Felix Heibeck</a>
+		<h1>cuboino</h1>
+		
+		<!-- 
+		<span class="right">
+            <a href="../wildandtame/">WILD&TAME &raquo; </a>
+        </span>
+		-->
+    </div>
+	<div id="strap"></div>
+
+
+
+    <div id="nav">
+    	<ul>
+        	<li class="current"><a onClick="goToByScroll('home');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('video');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('about');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('gallery');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('thesis');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('pictures');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('footer');" class="rounded"></a></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    
+
+    
+	<!-- container -->
+	<div id="container">
+
+		<!-- home -->
+		<div id="home" class="section">
+			<div class="overflow">
+				<div class="set-size">
+
+					<div class="description">
+						<h1>cuboino</h1>
+						<h3>Digitally extending Analog Games.</h3>
+						<h3>An Example.</h3>
+					</div>
+
+				</div>
+			</div>			
+		</div>
+				
+		<!-- //home -->
+
+
+
+
+		<!-- video -->
+		<div id="video" class="section">
+			<div class="overflow">
+				<div class="set-size">
+					
+					<iframe src="http://player.vimeo.com/video/56011933?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="980" height="551" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+ 
+				</div>
+
+
+				<p ><a onClick="goToByScroll('about')" id="gonext"></a></p>
+
+			</div>
+		</div>
+
+
+		<!-- about -->
+		<div id="about" class="section">
+			<div class="overflow">
+				<div class="set-size">
+					
+					
+					<div class="description">
+						<h2>about cuboino</h2>
+						<p>cuboino is a tangible, digital extension for the marble-game cuboro.</p>
+						<p>
+						It consists of a set of cubes that are seamlessly compatible with the cuboro cubes.
+						In contrast to the passive cuboro cubes, cuboino modules are active parts of a digital system consisting of sensor cubes, actor cubes and supply cubes.
+						By snapping them together, the playercan  build a modular system that functions according to he individual functionalities of the cuboino cubes.
+						</p>
+						<p>
+						cuboino establishes a new pathway that is not embodied in the marble, but adapts to the medium of its transmission.
+						Signals can be received by multiple modules, creating more than one signal at a time.
+						This allows signals to intertwine and thus create more dynamic and complex outcomes.
+						</p>
+						<br />
+						<p>
+							For more informations have a look at <a onClick="goToByScroll('thesis')">my bachelor-thesis</a>.
+						</p>
+					</div>
+
+				</div>
+
+				<p >
+					<a onClick="goToByScroll('gallery')" id="gonext"></a>
+				</p>
+			</div>
+		</div>
+		<!-- //about -->
+
+		
+		
+		
+
+
+
+		<!-- gallery -->
+		<div id="gallery" class="section">
+			<div class="overflow">
+				<div class="set-size">
+
+					<!-- header -->
+					<div class="header">
+						<h2>cuboino cubes</h2>
+					</div>
+					<!-- //header -->
+					
+					<div class="gallery">
+						
+						<div class="cube-entry">
+							<a href="javascript:animatedcollapse.toggle('actor-light')">
+								<img src="images/gallery/actor-light.jpg" alt="" />
+							</a>
+						</div>
+											
+						<div class="cube-entry">
+							<a href="javascript:animatedcollapse.toggle('actor-sound')">
+								<img src="images/gallery/actor-sound.jpg" alt="" />
+							</a>
+						</div>
+												
+						<div class="cube-entry">
+							<a href="javascript:animatedcollapse.toggle('actor-shunting')">
+								<img src="images/gallery/actor-shunting.jpg" alt="" />
+							</a>
+						</div>
+						
+						<div class="cube-entry">
+							<a href="javascript:animatedcollapse.toggle('actor-release')">
+								<img src="images/gallery/actor-release.jpg" alt="" />
+							</a>
+						</div>
+						
+					</div>
+						
+						
+						
+					<div class="cube-gallery" id="actor-light">
+						<img src="images/gallery/actor-light.jpg" alt="" />
+						<h2>light actor cube</h2>
+						<p>
+							When activated, this cube sheds a light into the direction it is pointed at. The cube can be used to activate the light-sensor cube or just for debugging of a track.
+						</p>	
+					</div>
+					
+					<div class="cube-gallery" id="actor-sound">
+						<img src="images/gallery/actor-sound.jpg" alt="" />
+						<h2>sound actor cube</h2>
+						<p>
+							This cube emits a sound of a pre-defined frequency when activated. It can be used to activate the light-sensor cube or just for debugging purposes.
+						</p>
+						
+					</div>
+					
+					<div class="cube-gallery" id="actor-shunting">
+						<img src="images/gallery/actor-shunting.jpg" alt="" />
+						<h2>shunting switch actor cube</h2>
+						<p>
+							This cube acts like a shunting switch for the marble track. When activated, the shunting turns 90 degrees and thus leads the marble into the opposite direction.	
+						</p>
+					</div>
+						
+					<div class="cube-gallery" id="actor-release">
+						<img src="images/gallery/actor-release.jpg" alt="" />
+						<h2>release actor cube</h2>
+						<p>
+							This cube can hold a bunch of marbles. When activated, the cube releases one single marble onto the track. This makes this cube the ideal starting point for a marble track.
+						</p>
+					</div>
+					
+						
+					
+					<div class="gallery">
+					
+						<div class="cube-entry">
+							<a href="javascript:animatedcollapse.toggle('sensor-light')" rel="group1" class="lightbox">
+							<img src="images/gallery/sensor-light.jpg" alt="" />
+							</a>
+						</div>
+						
+						<div class="cube-entry">
+							<a href="javascript:animatedcollapse.toggle('sensor-sound')">
+							<img src="images/gallery/sensor-sound.jpg" alt="" />
+							</a>
+						</div>
+						
+						<div class="cube-entry">
+							<a href="javascript:animatedcollapse.toggle('sensor-marble')" >
+							<img src="images/gallery/sensor-marble.jpg" alt="" />
+							</a>
+						</div>
+						
+						<div class="cube-entry">
+							<a href="javascript:animatedcollapse.toggle('sensor-button')"</span>
+							<img src="images/gallery/sensor-button.jpg" alt="" />
+							</a>
+						</div>
+					
+					</div>
+					
+					<div class="cube-gallery" id="sensor-light">
+						<img src="images/gallery/sensor-light.jpg" alt="" />
+						<h2>light sensor cube</h2>
+						<p>
+							When the ambient light level rises quickly, this cube is activated. This can be caused by shedding a light onto the sensor side of the cube or quickly removing a shadow and thus increasing the amount of light. Hence this cube detects an activated light-actor cube if aligned correctly.
+						</p>	
+					</div>
+					
+					<div class="cube-gallery" id="sensor-sound">
+						<img src="images/gallery/sensor-sound.jpg" alt="" />
+						<h2>sound sensor cube</h2>
+						<p>
+							This cube is able to sense sound of a pre-defined frequency. It also reacts to loud noises when occuring in the right frequency.
+						</p>	
+					</div>
+					
+					<div class="cube-gallery" id="sensor-marble">
+						<img src="images/gallery/sensor-marble.jpg" alt="" />
+						<h2>sound sensor cube</h2>
+						<p>
+							When a marble runs through the track on top of the cube, a light barrier is intersected and the cube is activated. The cube can also be activated by putting anything else into the light-barrier.
+						</p>	
+					</div>
+					
+					<div class="cube-gallery" id="sensor-button">
+						<img src="images/gallery/sensor-button.jpg" alt="" />
+						<h2>button sensor cube</h2>
+						<p>
+							This cube offers the player an opportunity to directly interact with built systems. When the button on the side is pushed, the cube is activated.
+							Additionally, this cube makes it easy to test functions of action cubes, as the system needed to see an action is minimal.
+						</p>	
+					</div>
+					
+
+					
+					
+					
+					<div class="gallery">
+						
+						<div class="cube-entry">
+							<a href="javascript:animatedcollapse.toggle('supply-connection')" >
+							<img src="images/gallery/supply-conductive.jpg" alt="" />
+							</a>
+						</div>
+						
+						<div class="cube-entry">
+							<a href="javascript:animatedcollapse.toggle('supply-energy')" >
+							<img src="images/gallery/supply-energy.jpg" alt="" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="cube-gallery" id="supply-energy">
+						<img src="images/gallery/supply-energy.jpg" alt="" />
+						<h2>energy supply cube</h2>
+						<p>
+							This cube has to be part of every working cuboino network as it supplies energy to all cubes physically connected.
+							Multiple energy cubes are allowed in one network.
+						</p>	
+					</div>
+					
+					<div class="cube-gallery" id="supply-connection">
+						<img src="images/gallery/supply-conductive.jpg" alt="" />
+						<h2>connection supply cube</h2>
+						<p>
+							This cube just transmits energy and signals and multiplexes the outputs with its six connectable sides.
+						</p>	
+					</div>
+					
+					
+
+				</div>
+				<p><a onClick="goToByScroll('examples')" id="gonext"></a></p>
+
+			</div>
+		</div>
+		<!-- //gallery -->
+		
+		
+		
+		
+		<div id="examples" class="section">
+			<div class="overflow">
+				<div class="set-size">
+					<div class="description">
+						<h2>cuboino networks</h2>
+						<p>
+							Due to its modular nature, cuboino cubes allow for different systems to be assembled by the player. Here a selection of systems and concepts are presented in order to showcase the possibilities of cuboino cubes.
+						</p>
+						<a href="javascript:animatedcollapse.toggle('network-marble_distributor')">marble distributor</a>
+						<div id="network-marble_distributor">
+							<img src="images/networks/marble_distributor.png" />
+						</div>
+						
+						
+						<a href="javascript:animatedcollapse.toggle('network-remote_marble_distributor')">remote marble distributor</a>
+						<div id="network-remote_marble_distributor">
+							<img src="images/networks/remote_marble_distributor.png" />
+						</div>
+						
+						<a href="javascript:animatedcollapse.toggle('network-multiplexing')">multiplexing</a>
+						<div id="network-multiplexing">
+							<img src="images/networks/multiplexing.png" />
+						</div>
+						
+						<a href="javascript:animatedcollapse.toggle('network-infinity_loop')">infinity loop</a>
+						<div id="network-infinity_loop">
+							<img src="images/networks/infinity_loop.png" />
+						</div>
+						
+						
+					
+					
+						
+					</div>
+								
+				</div>
+				
+				<p><a onClick="goToByScroll('thesis')" id="gonext"></a></p>
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- folio1 -->
+		<div id="thesis" class="section">
+			<div class="overflow">
+				<div class="set-size">
+					
+					<!-- column -->
+					<div class="column-540 float-left">
+						<img src="images/thesis.jpg" alt="" width="500" />
+					</div>
+										
+					<div class="description-float-right">
+						
+						<h2>Bachelor-Thesis</h2>
+						<p> cuboino was created in the course of my bachelor-thesis.</p>
+						<p> The thesis deals with the extension of analog games using digital technology. 
+							cuboino is the try to exemplify the possibilities of this approach.</p>
+						
+							
+						<div class="clear"></div>    
+					</div>
+
+
+					<div>
+						<div data-configid="6618305/1095043" style="width: 980px; height: 497px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+					</div>
+
+
+			</div>
+		</div>
+
+
+
+
+		<!-- folio1 -->
+		<div id="pictures" class="section">
+			<div class="overflow">
+				<div class="set-size">
+					
+					<object width="980" height="735"> <param name="flashvars" value="offsite=true&lang=de-de&page_show_url=%2Fphotos%2F38088189%40N07%2Fsets%2F72157632409773509%2Fshow%2F&page_show_back_url=%2Fphotos%2F38088189%40N07%2Fsets%2F72157632409773509%2F&set_id=72157632409773509&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=124956"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=124956" allowFullScreen="true" flashvars="offsite=true&lang=de-de&page_show_url=%2Fphotos%2F38088189%40N07%2Fsets%2F72157632409773509%2Fshow%2F&page_show_back_url=%2Fphotos%2F38088189%40N07%2Fsets%2F72157632409773509%2F&set_id=72157632409773509&jump_to=" width="980" height="735"></embed></object>
+					
+				</div>
+			</div>
+		</div>
+					
+    <div class="clear"></div>
+    
+    <!-- footer -->
+    <div id="footer">
+    <div class="set-size">
+    <a onClick="goToByScroll('home')" id="gotop"></a>
+    	<p class="right">&copy; 2012 Felix Heibeck</p>
+		<p> Mit Unterstützung von <img src="http://www.supermagnete.de/press/supermagnete_logo_12.gif" width="60" /> </p>
+    </div>
+    </div>
+    <!-- //footer -->
+    
+</body>
+</html>
