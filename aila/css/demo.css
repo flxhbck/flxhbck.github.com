@@ -1,0 +1,140 @@
+@import url('normalize.css');
+/* General Demo Style */
+
+html, body {
+	height: 100%;
+}
+
+body{
+	background: #333 url("../images/bg.png") repeat;
+	font-weight: 400;
+	font-size: 15px;
+	color: #333;
+}
+
+.link-container{
+	margin: 20px auto 0 auto;
+	text-align: center;
+}
+
+a{
+	font-family: serif;
+	color: #ffff00;
+	text-decoration: none;
+	text-shadow: 1px 1px 3px #000;
+	margin: 10 auto;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+.container{
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+}
+.clr{
+	clear: both;
+	padding: 0;
+	height: 0;
+	margin: 0;
+}
+.container > header{
+	margin: 10px;
+	padding: 20px 10px 10px 10px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.container > header h1{
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0;
+	position: relative;
+	font-weight: 300;
+	color: #707a8d;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+}
+.container > header h1 span{
+	font-weight: 700;
+}
+.container > header h2{
+	font-size: 14px;
+	font-weight: 300;
+	margin: 0;
+	padding: 15px 0 5px 0;
+	color: #4d525d;
+	font-family: Cambria, Georgia, serif;
+	font-style: italic;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.9);
+}
+
+
+
+/* Header Style */
+#strap{
+	height: 3px;
+	background-color: #ffff00;
+	-webkit-box-shadow:rgba(0, 0, 0, 0.496094) 0px 1px 3px;
+	-moz-box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.496094);  /* Fx 3.5-3.6 */
+		 box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.496094);  /* Fx 4; CSS3 */
+}
+
+
+
+.f3h-top{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	line-height: 24px;
+	font-size: 11px;
+	text-transform: uppercase;
+	z-index: 9999;
+	font-family: Cambria, Georgia, serif;
+}
+
+
+.f3h-top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	font-style: italic;
+	color: #ffff00;
+	display: inline-block;
+}
+
+.f3h-top .home a{
+	font-style: none;
+	
+}
+
+.f3h-top a:hover{
+	background: rgba(255,255,255,0.3);
+}
+
+.f3h-top h1{
+	text-align: center;
+	display: inline;
+	
+	margin-left: 10%;
+	
+	padding: 0px 7%;
+	
+	text-transform: inherit;
+	font-weight: bold;
+	font-style: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	line-height: inherit;
+	letter-spacing: 1px;
+	color: #ffff00;
+}
+
+
+.f3h-top span.right{
+	float: right;
+}
+.f3h-top span.right a{
+	float: left;
+	display: block;
+}
