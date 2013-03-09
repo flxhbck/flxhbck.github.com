@@ -159,7 +159,7 @@ body {
 	min-width: 200px;
 }
 
-#about .highlight{
+.highlight{
 	color: #ffff00;
 	padding: 0;
 	margin: 0;
@@ -206,6 +206,10 @@ body {
 	max-width:220px;
 	
 	margin-bottom: -10px
+}
+
+#publications p{
+	font-size: 13px;
 }
 
 
