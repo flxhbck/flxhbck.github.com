@@ -50,6 +50,15 @@ h1,h2,h3,h4{
 code{
   font-family: Lucida Console, Monaco, Andale Mono, monospace;
 }
+
+img{
+  max-width: 100%;
+}
+
+iframe{
+	width: 100%;
+}
+
 .container{
   overflow: hidden;
   width: 720px;
@@ -71,7 +80,6 @@ header[role="banner"]{
     height: 34px;
     margin-top: 20px;
     border: 0 none;
-    /* background: url(http://assets.michieldegraaf.com/blog/img/logo-black.png) no-repeat center center; */
   }
     .logo img{
       display: none;
@@ -160,6 +168,7 @@ section[role="main"]{
     article .content{
       font-size: 1.25em;
     }
+      
       article .content h2,
       article .content h3{
         margin: 30px 0;
@@ -173,13 +182,14 @@ section[role="main"]{
       article .content p{
         margin-bottom: 20px;
       }
+
       article .content figure{
-        width: 100%;
+        max-width: 100%;
         margin: 30px 0;
       }
         article .content figure img{
           display: block;
-          width: 100%;
+          max-width: 100%;
           margin-top: 20px;
         }
         article .content figure figcaption{
@@ -230,6 +240,10 @@ section[role="main"]{
       article .content .read-more{
         margin-top: 10px;
       }
+
+blockquote{
+  margin-left: 50px;
+}
 
 /* Gist
  *************************************/
@@ -401,6 +415,7 @@ footer[role="footer"]{
     width: auto;
     padding: 0 20px;
   }
+  
 }
 @media screen and (max-width: 480px){
   body{
@@ -429,6 +444,8 @@ footer[role="footer"]{
       article .content h3{
         margin: 15px 0;
       }
+      
+  
       article .content .gist .gist-file .gist-data pre{
         font-size: 70% !important;
       }
@@ -457,6 +474,3 @@ footer[role="footer"]{
     padding: 30px 0;
   }
 }
-
-/* Retina
- *************************************/

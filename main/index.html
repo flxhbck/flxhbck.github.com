@@ -4,178 +4,236 @@
 <!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<title>Felix Heibeck | Portfolio</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<meta name="description" content="The digital Portfolio of Felix Heibeck" />
-		<meta name="keywords" content="Digital Media, Physical Computing, Arduino, Experience Design" />
-		<meta name="author" content="Felix Heibeck" />
-		<link rel="shortcut icon" href="../favicon.ico"> 
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/style2.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<title>Felix Heibeck | Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="description" content="The digital Portfolio of Felix Heibeck" />
+	<meta name="keywords" content="Digital Media, Physical Computing, Arduino, Experience Design" />
+	<meta name="author" content="Felix Heibeck" />
+	<link rel="shortcut icon" href="../favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="css/style2.css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+		<!--
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-		
-		<script type="text/javascript">
-		    function UnCryptMailto( s )
-		    {
-		        var n = 0;
-		        var r = "";
-		        for( var i = 0; i < s.length; i++)
-		        {
-		            n = s.charCodeAt( i );
-		            if( n >= 8364 )
-		            {
-		                n = 128;
-		            }
-		            r += String.fromCharCode( n - 1 );
-		        }
-		        return r;
-		    }
+	-->
+	<script type="text/javascript">
+	function UnCryptMailto( s )
+	{
+		var n = 0;
+		var r = "";
+		for( var i = 0; i < s.length; i++)
+		{
+			n = s.charCodeAt( i );
+			if( n >= 8364 )
+			{
+				n = 128;
+			}
+			r += String.fromCharCode( n - 1 );
+		}
+		return r;
+	}
 
-		    function linkTo_UnCryptMailto( s )
-		    {
-		        location.href=UnCryptMailto( s );
-		    }
-		</script>
-		
-	</head>
-	<body>
-		<div id="strap"></div>
-				
-		<ul class="cb-slideshow">
-            <li><span>Image 01</span></li>
-            <li><span>Image 02</span></li>
-            <li><span>Image 03</span></li>
-            <li><span>Image 04</span></li>
-            <li><span>Image 05</span></li>
-            <li><span>Image 06</span></li>
-        </ul>	
-		
-		
-		<!-- About -->
-		<div id="about" class="panel">
-			<div class="content">
-				<h2>Me</h2>
-				<p><span>Undergraduate-Student of <a href="http://www.digitalmedia-bremen.de/en/bachelor/programaims">Digital Media</a> at the <a href="http://www.uni-bremen.de/en.html">University of Bremen</a> </span></p>
-				<p><span>Exchange-Semester at <a href="http://www.concordia.ca/">Concordia University, Canada</a> in <a href="http://design.concordia.ca/programs/undergraduate/computation-arts/">Computation Arts</a></span></p>
-				<p><span>&para;	</span></p>
-				<p><span>I work at the border between <span class="highlight">digital systems and humans</span></span></p>
-				<p><span>I like combining <span class="highlight">digital technology  with materials/objects/spaces</span> </span></p>
-				<p><span>I enjoy <span class="highlight">creating experiences</span> using digital media </span></p>
-			</div>
-		</div>
-		<!-- /About -->
-		
-		
-		
-		<!-- Projects -->
-		<div id="projects" class="panel">
-			<div class="content">
-				<h2>Projects</h2>
-				
-				<div id="works">
-					<div id="project">
-						<a href="../cuboino/"><img src="images/projects/cuboino.jpg" width="220" height="210"></a>
-						<span id="detail"><a href="../cuboino/">cuboino</a> // 2012</span>
+	function linkTo_UnCryptMailto( s )
+	{
+		location.href=UnCryptMailto( s );
+	}
+
+	function do_scroll(href) 
+	{	
+		location.href='#'+href;
+		about.scrollTop = 0;
+		projects.scrollTop = 0;
+		publications.scrollTop = 0;
+		experiments.scrollTop = 0;
+	}
+
+	</script>
+
+</head>
+<body>
+	<div id="outer">
+		<div id="middle">
+			<div id="inner">
+
+
+
+				<!-- About -->
+				<div id="about" class="panel">
+
+					<div id="escape">
+						<a id="escape"href="#">x</a>
 					</div>
-					
-					<div id="project">
-						<a href="../aila/"><img src="images/projects/aila.jpg" width="220" height="210"></a>
-						<span id="detail"><a href="../aila/">Aila</a> // 2012</span>
+
+					<div class="content">
+						<h2>Felix Heibeck </h2>
+
+						<p>Undergraduate-Student of <a href="http://www.digitalmedia-bremen.de/en/bachelor/programaims">Digital Media</a> at the <a href="http://www.uni-bremen.de/en.html">University of Bremen</a> </p>
+
+						<p>Exchange-Semester at <a href="http://www.concordia.ca/">Concordia University (Montréal, Canada)</a> in <a href="http://design.concordia.ca/programs/undergraduate/computation-arts/">Computation Arts</a></p>
+
+						<p> / </p>
+
+						<p>I work at the border between digital systems and humans</p>
+						<p>I like combining digital technology  with materials/objects/spaces</p>
+						<p>I enjoy creating experiences using digital media</p>
 					</div>
-					
-					<div id="project">
-						<a href="../wildandtame/"><img src="images/projects/wildandtame.jpg" width="220" height="210"></a>
-						<span id="detail"><a href="../wildandtame/">WILD&TAME</a> // 2011</span>
-					</div>
-					
-					<div id="project">
-						<a href="../echo/"><img src="images/projects/echo.jpg" width="220" height="210"></a>
-						<span id="detail"><a href="../echo/">Echo</a> // 2011</span>
-					</div>
-					
-					<div id="project">
-						<a href="../metadoors/"><img src="images/projects/metadoors.jpg" width="220" height="210"></a>
-						<span id="detail"><a href="../metadoors/">METADOORS</a> // 2011</span>
-					</div>
-						
-							
-				</div> <!-- end div works -->
-			</div> <!-- end content -->
-		</div> <!-- end projects -->
-		
-		<!-- /Projects -->
-		
-		
-		<!-- Publications -->
-		<div id="publications" class="panel">
-			<div class="content">
-				<h2>Publications</h2>
-				<p><span>Heibeck, F., Hespenheide, J., Heuer, H., Krüger, M. & Roetmann, W., (2011). <span class="highlight">WILD&TAME - System-Demonstration.</span> In: Eibl, M. & Ritter, M. (Hrsg.), Workshop-Proceedings der Tagung Mensch & Computer 2011. überMEDIEN|ÜBERmorgen. Chemnitz: Universitätsverlag Chemnitz. (S. 53-54).</span></p>
-			</div>
-		</div>
-		<!-- /Publications -->
-		
-		<!-- Experiments -->
-		<div id="experiments" class="panel">
-			<div class="content">
-				<h2>Experiments</h2>
-				<div id="works">
-					
-					<div id="project">
-						<a href="http://www.flickr.com/photos/38088189@N07/sets/72157632956830124/"><img src="images/experiments/vaeri.jpg" width="220" height="210"></a>
-						<span id="detail"><a href="http://www.flickr.com/photos/38088189@N07/sets/72157632956830124/">VÄRI</a> // 2013</span>
-					</div>
-					
-					<div id="project">
-						<a href="http://www.flickr.com/photos/38088189@N07/sets/72157631306714118/"><img src="images/experiments/capillary-action.png" width="220" height="210"></a>
-						<span id="detail"><a href="http://www.flickr.com/photos/38088189@N07/sets/72157631306714118/">Capillary Action</a> // 2011</span>
-					</div>
-					
-					<div id="project">
-						<a href="http://www.flickr.com/photos/38088189@N07/sets/72157628170206287/"><img src="images/experiments/marsh-o-matic.jpg" width="220" height="210"></a>
-						<span id="detail"><a href="http://www.flickr.com/photos/38088189@N07/sets/72157628170206287/">Marsh-o-matic</a> // 2011</span>
-					</div>
-					
-					<div id="project">
-						<a href="https://vimeo.com/18645975/"><img src="images/experiments/fibonacci-vehicles.jpg" width="220" height="210"></a>
-						<span id="detail"><a href="https://vimeo.com/18645975/">Fibonacci-Vehicles</a> // 2010</span>
-					</div>
-					
 				</div>
+				<!-- /About -->
+
+
+
+
+
+				<!-- Projects -->
+				<div id="projects" class="panel">
+
+					<div id="escape">
+						<a id="escape"href="#">x</a>
+					</div>
+
+					<div class="content">
+
+						<h2>Projects</h2>
+
+						<div class="project" id="cuboino">
+							<a href="./cuboino/">cuboino / 2012</a>
+						</div>
+
+						<div class="project" id="aila">
+							<a href="./aila/">Aila / 2012</a>
+						</div>
+
+						<div class="project" id="wildandtame">
+							<a href="./wildandtame/">WILD&amp;TAME / 2011</a>
+						</div>
+
+						<div class="project" id="echo">
+							<a href="./echo/">Echo / 2011</a>
+						</div>
+
+						<div class="project" id="metadoors">
+							<a href="./metadoors/">Metadoors / 2011</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- /Projects -->
+
+
+
+
+
+
+
+
+
+				<!-- Publications -->
+				<div id="publications"  class="panel">
+
+					<div id="escape">
+						<a id="escape"href="#">x</a>
+					</div>
+
+					<div class="content">
+						<h2 >Publications</h2>
+
+						<p class="pub">Heibeck, F., Hespenheide, J., Heuer, H., Krüger, M. & Roetmann, W., (2011). <span class="highlight">WILD&TAME - System-Demonstration.</span> In: Eibl, M. & Ritter, M. (Hrsg.), Workshop-Proceedings der Tagung Mensch & Computer 2011. überMEDIEN|ÜBERmorgen. Chemnitz: Universitätsverlag Chemnitz. (S. 53-54).
+						</p>
+					</div>
+				</div>
+				<!-- /Publications -->
+
+
+
+
+
+
+
+
+
+
+				<!-- Experiments -->
+				<div id="experiments" class="panel">
+					
+					<div id="escape">
+						<a id="escape"href="#">x</a>
+					</div>
+
+					<div class="content">
+						<h2>Experiments</h2>
+
+						<div class="experiment" id="vaeri">
+							<a href="http://www.flickr.com/photos/38088189@N07/sets/72157632956830124/">
+								V&Auml;RI / 2013
+							</a>
+						</div>
+
+						<div class="experiment" id="capillary_action">
+							<a href="http://www.flickr.com/photos/38088189@N07/sets/72157631306714118/">
+								Capillary Action / 2011
+							</a>
+						</div>
+
+						<div class="experiment" id="marshomatic">
+							<a href="http://www.flickr.com/photos/38088189@N07/sets/72157628170206287/">
+								Marsh-o-matic / 2011
+							</a>
+						</div>
+
+						<div class="experiment" id="fibonacci">
+							<a href="https://vimeo.com/18645975/">
+								Fibonacci Vehicles / 2010
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /Experiments -->
+
+
+
+
+
+
+				<div id="nav" class="nav_panel">
+
+					<div id="outer">
+						<div id="middle">
+							<div id="inner_nav">
+
+								<h1>Felix Heibeck</h1>
+
+								<ul id="navigation">
+									<li><a id="link-about" href="javascript:do_scroll('about');" >About Me</a></li>
+									<li><a id="link-projects" href="javascript:do_scroll('projects');">Projects</a></li>
+									<li><a id="link-experiments" href="javascript:do_scroll('experiments');">Experiments</a></li>
+									<!--
+									<li><a id="link-publications" href="javascript:do_scroll('publications');">Publications</a></li>
+									-->
+									<li id="misc">
+										<a href="javascript:linkTo_UnCryptMailto('nbjmup;gfm/ifjcfdlAhnbjm/dpn');"><img src="images/icons/mail.png" width="40" height="40"></a>
+										<a href="http://www.flickr.com/photos/38088189@N07/"><img src="images/icons/flickr.png" width="40" height="40"></a>
+										<a href="http://vimeo.com/f3h"><img src="images/icons/vimeo.png" width="40" height="40"></a>
+									</li>
+								</ul>
+
+
+							</div>
+						</div>
+					</div>
+					<!-- End outer - middle - inner_nav -->
+
+				</div>
+
 			</div>
 		</div>
-		<!-- /Experiments -->
-		
+	</div>
 
-		
-		
 
-		<!-- Header with Navigation -->
-		<div id="header">
-			<h1>Felix Heibeck</h1>
-			<ul id="navigation">
-				<li><a id="link-about" href="#about">About Me</a></li>
-				<li><a id="link-projects" href="#projects">Projects</a></li>
-				<li><a id="link-publications" href="#publications">Publications</a></li>
-				<li><a id="link-experiments" href="#experiments">Experiments</a></li>
-				<li id="misc">
-					<a href="javascript:linkTo_UnCryptMailto('nbjmup;gfm/ifjcfdlAhnbjm/dpn');"><img src="images/icons/mail.png" width="50" height="50"></a>
-					<a href="http://www.flickr.com/photos/38088189@N07/"><img src="images/icons/flickr.png" width="50" height="50"></a>
-					<a href="http://vimeo.com/f3h"><img src="images/icons/vimeo.png" width="50" height="50"></a>
-				</li>
-				
-			</ul>
-			<!-- Demo Nav
-			<nav id="codrops-demos">
-				<a href="index.html#home">Demo 1</a>
-				<a class="current-demo" href="#home">Demo 2</a>
-				<a href="index3.html#home">Demo 3</a>
-			</nav>
-			 -->
-		</div>
-		
-	</body>
+
+
+
+</body>
 </html>
