@@ -92,26 +92,14 @@ body{
 
 
 /* Header Style */
-#strap{
-	height: 3px;
-	background-color: #ffff00;
-	-webkit-box-shadow:rgba(0, 0, 0, 0.496094) 0px 1px 3px;
-	-moz-box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.496094);  /* Fx 3.5-3.6 */
-		 box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.496094);  /* Fx 4; CSS3 */
-}
-
-
 
 .f3h-top{
-	width: 100%;
 	position: fixed;
 	top: 0;
 	line-height: 24px;
-	font-size: 11px;
 	text-transform: uppercase;
-	z-index: 9999;
-	font-family: Cambria, Georgia, serif;
-	font-weight: normal;
+	font-family: Helvetica, sans-serif;
+	z-index: 900;
 }
 
 
@@ -119,44 +107,13 @@ body{
 	padding: 0px 10px;
 	letter-spacing: 1px;
 	font-style: italic;
-	color: #ffff00;
+	color: #fff;
 	display: inline-block;
-}
-
-.f3h-top .home a{
-	font-style: none;
-	
+	text-decoration: none;
 }
 
 .f3h-top a:hover{
-	background: rgba(255,255,255,0.3);
-}
-
-.f3h-top h1{
-	text-align: center;
-	display: inline;
-	
-	margin-left: 10%;
-	
-	padding: 0px 7%;
-	
-	text-transform: inherit;
-	font-weight: bold;
-	font-style: inherit;
-	font-size: inherit;
-	font-family: inherit;
-	line-height: inherit;
-	letter-spacing: 1px;
-	color: #ffff00;
-}
-
-
-.f3h-top span.right{
-	float: right;
-}
-.f3h-top span.right a{
-	float: left;
-	display: block;
+	text-decoration: underline;
 }
 
 
