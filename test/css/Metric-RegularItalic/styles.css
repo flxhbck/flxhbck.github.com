@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Metric-RegularItalic';
+  src: url('Metric-RegularItalic.eot?#iefix') format('embedded-opentype'),  url('Metric-RegularItalic.otf')  format('opentype'),
+	     url('Metric-RegularItalic.woff') format('woff'), url('Metric-RegularItalic.ttf')  format('truetype'), url('Metric-RegularItalic.svg#Metric-RegularItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

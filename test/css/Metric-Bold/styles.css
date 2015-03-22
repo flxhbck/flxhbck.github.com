@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Metric-Bold';
+  src: url('Metric-Bold.eot?#iefix') format('embedded-opentype'),  url('Metric-Bold.otf')  format('opentype'),
+	     url('Metric-Bold.woff') format('woff'), url('Metric-Bold.ttf')  format('truetype'), url('Metric-Bold.svg#Metric-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

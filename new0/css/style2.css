@@ -1,0 +1,525 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+html,body {
+    margin:0;
+    padding:0;
+    height:100%;
+    width: 100%;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+
+address,caption,cite,code,dfn,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;
+}
+
+
+
+/* Customs */
+
+html, body {
+	height:100%;
+    overflow: hidden;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:30px;
+    color: #fff;
+}
+body {
+    background-size: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+    background-color: #188CAA;
+}
+
+h2{
+	font-size: 30px;
+    padding-top:30px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	color: #fff;
+    text-align: center;
+}
+
+p{
+	font-size: 18px;
+	color: #000;
+	margin-top: 6px;
+	line-height: 50px;
+	text-align: left;
+}
+
+a{
+	color: #fff;
+    text-decoration: none;
+
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.2); 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.1); 
+}
+
+::-webkit-scrollbar-corner {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+#outer{
+    height: 100%; 
+    width: 100%;
+    overflow: hidden; 
+    position: relative; 
+}
+
+#outer[id] {
+    display: table;
+    position: static;
+}
+
+#middle {
+    position: absolute;
+    top: 50%; 
+    width: 100%; 
+    text-align: center;
+    } /* for explorer only*/
+
+#middle[id] {
+    display: table-cell; 
+    vertical-align: middle; 
+    position: static;
+}
+
+
+
+#inner {
+    position: relative;
+    width: 75%;
+    max-width: 720px;
+    height: 85%;
+    top: -50%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav_panel{
+    background-color: none;
+}
+
+.panel{
+    min-width: 100%;
+    height: 100%;
+    overflow: visible;
+    position: absolute;
+
+    opacity: 0;
+    z-index:2;
+
+    background-color: #2697B2;
+
+    -webkit-transform-origin: 50% 50% 100px;
+    -webkit-transform: scale(0);
+
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+
+.panel:target{
+    -webkit-transform: scale(1);
+
+    opacity: 1;
+    margin-top: 0%;
+}
+
+
+.panel #escape{
+    position: fixed;
+    max-width: 720px;
+    width: 50%;
+    overflow: visible;
+    opacity: 1;
+
+    z-index: 5000;
+    top: -20px;
+    right: 6px;
+}
+
+
+.panel #escape a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.panel #escape a:hover{
+    text-decoration: none;
+}
+
+
+
+
+.content {
+    width: 96%;
+    height: 98%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    overflow: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#inner_nav {
+    position: relative;
+    width: 70%;
+    max-width: 400px;
+    top: -50%;
+    padding: 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2697B2;
+}
+
+#nav {
+    height:100%;
+}
+
+#nav #inner {
+    width: 300px;
+    background-color: rgba(255,255,255,0.1);
+    padding: 20px;
+}
+
+#nav h1{
+    font-size: 36px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+
+#navigation {
+    width: 100%;
+    display:block;
+    list-style:none;
+    z-index:3;
+    text-align: center;
+}
+
+#navigation a {
+    color: #fff;
+    display: block;
+    margin-bottom:18px;
+    text-transform: uppercase;
+}
+
+
+#navigation #misc a{
+    padding: 0px 3px;
+    margin: 0;
+    margin-bottom: 0px;
+    display: inline;
+    background: none;
+}
+
+#navigation img{
+    padding: 0;
+    margin: 0;
+    display: inline;
+    text-transform: uppercase;
+}
+
+#navigation a:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#about{
+
+	max-height: 100%;
+    padding: 0;
+    font-size: 30px;
+}
+
+
+#about h2{
+    background: url("../images/me.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+
+    text-shadow: 0px 0px 25px #000 ;
+
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 330px;
+}
+
+#about p{
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+}
+
+#about img{
+    max-height:400px;
+}
+
+#about a{
+    color: #fff;
+}
+
+#about a:hover{
+    text-decoration: underline;    
+}
+
+
+
+
+
+
+
+
+#projects{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.project{
+    width: 100%;
+    height: 190px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+.project a{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 0px 7px #000;
+    display: block;
+    height: 130px;
+    padding-top: 60px;
+
+    background-color: rgba(0,0,0,0);
+
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+.project a:hover{
+    background-color: rgba(0,0,0,0.35);
+}
+
+
+#cuboino{
+    background: url("../images/projects/cuboino.png");
+    background-size: cover;
+    background-position: 50% 35%;
+    background-repeat: none;
+}
+
+#aila{
+    background: url("../images/projects/aila.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+}
+
+#wildandtame{
+    background: url("../images/projects/wildandtame.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+}
+
+#echo{
+    background: url("../images/projects/echo.png");
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: none;
+}
+
+#metadoors{
+    background: url("../images/projects/metadoors.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+}
+
+
+
+
+
+
+
+
+/* Experiments */
+
+#experiments{
+    width: 100%;
+    height: 100%;
+}
+
+.experiment{
+    width: 46%;
+    height: 190px;
+    float: left;
+
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+
+.experiment a{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 0px 7px #000;
+    display: block;
+    height: 130px;
+    padding-top: 60px;
+
+    background-color: rgba(0,0,0,0);
+
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+.experiment a:hover{
+    background-color: rgba(0,0,0,0.35);
+}
+
+
+#vaeri{
+    background: url("../images/experiments/vaeri.png");
+    background-size: cover;
+    background-position: 50% 80%;
+    background-repeat: none;
+}
+
+#capillary_action{
+    background: url("../images/experiments/capillaryaction.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+}
+
+#marshomatic{
+    background: url("../images/experiments/marshomatic.png");
+    background-size: cover;
+    background-position: 50% 15%;
+    background-repeat: none;
+}
+
+#fibonacci{
+    background: url("../images/experiments/fibonacci-vehicles.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#publications p{
+    color: #fff;
+	font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 5px;
+    margin-bottom: 5px;
+
+    background-color: rgba(255,255,255, 0.1);
+}

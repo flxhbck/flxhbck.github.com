@@ -1,0 +1,5 @@
+# Provide Specific Index Page (Set the default handler)
+DirectoryIndex index.html index.php
+
+RewriteEngine On
+RewriteRule    ^([A-Za-z0-9-]+)/?$    ?action=$1    [NC,L]

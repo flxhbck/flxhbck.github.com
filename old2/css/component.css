@@ -1,0 +1,291 @@
+/* Set all parents to full height */
+html, body, 
+.container,
+.cbp-fbscroller { 
+	height: 100%; 
+}
+
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+	position: fixed;
+	z-index: 9999;
+	right: 100px;
+	top: 50%;
+	width: 26px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.cbp-fbscroller > nav a {
+	display: block;
+	position: relative;
+	z-index: 9999;
+	color: transparent;
+	width: 26px;
+	height: 26px;
+	outline: none;
+	margin: 25px 0;
+	border-radius: 50%;
+	border: 4px solid #fff;
+}
+
+.no-touch .cbp-fbscroller > nav a:hover {
+	background: rgba(255,255,255,0.6);
+}
+
+.cbp-fbscroller > nav a.cbp-fbcurrent {
+	background: #fff;
+}
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+	position: relative;
+}
+
+.no-touch .cbp-fbscroller section {
+	background-attachment: fixed;
+}
+
+
+#hoverheader {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	left: 0px;
+	top: 20px;
+}
+
+#hoverheader li {
+	display: inline;
+	list-style: none;
+	font-style: !none;
+	font-size: 1em;
+	padding-left: 10px;
+}
+
+#hoverheader ul {
+	font-style: !none;
+	font-size: 1em;
+	position: absolute;
+	top: 0;
+	right: 50px;
+}
+
+
+
+
+#landing_page {
+	height: 100%;
+	background-image: url(../images/1.jpg);
+	background-size: cover;
+	background-position: center bottom;
+}
+
+#landing_page #title {
+	position: absolute;
+	top: 30%;
+	width: 100%;
+}
+
+#landing_page h1 {
+	margin: 0;
+	position: relative;
+	text-align: center;
+	text-shadow: 1px 1px rgba(0,0,0,0.5);
+	font-style: italic;
+	font-size: 5em;
+
+}
+
+#landing_page h2 {
+	position: relative;
+	text-align: center;
+	text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+
+#landing_page #menu {
+	position: absolute;
+	bottom: 35px;
+	width: 100%;
+	padding: 0% 20%;
+}
+
+#landing_page #menu #menu_link{
+	position: relative;
+	text-align: center;
+	float: center;
+}
+
+#landing_page #menu #menu_link a{
+	padding: 15px 40px;
+	background: #111;
+	font-size: 0.9em;
+	font-weight: 400;
+	letter-spacing: 0.2em;
+}
+
+#landing_page #menu #menu_link a:hover {
+	color: #000;
+	background: #ddd;
+}
+
+
+
+#projects {
+	background-color: #fff;
+	background-image: url(../images/2.png);
+	background-repeat: repeat;
+}
+
+#projects h2 {
+	top: 50px;
+	margin: 0;
+	padding: 20px 50px;
+
+	font-weight: 700;
+	font-size: 3em;
+	font-style: italic;
+	text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+
+#projects p {
+	width: 36%;
+	float: left;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+#projects img {
+	float: left;
+	max-width: 60%;
+	margin-bottom: 20px;
+}
+
+#projects a {
+	color: #000;
+	font-weight: 700;
+}
+
+
+
+
+
+#experiments {
+	background-color: #fff;
+	background-image: url(../images/2.png);
+	background-repeat: repeat;
+}
+
+#experiments h2 {
+	top: 50px;
+	margin: 0;
+	padding: 20px 50px;
+
+	font-weight: 700;
+	font-size: 3em;
+	font-style: italic;
+	text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+
+#experiments p {
+	width: 36%;
+	float: left;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+#experiments img {
+	float: left;
+	max-width: 60%;
+	margin-bottom: 20px;
+}
+
+#experiments a {
+	color: #000;
+	font-weight: 700;
+}
+
+
+
+
+
+
+#current {
+	background-color: #fff;
+	background-image: url(../images/2.png);
+	background-repeat: repeat;
+}
+
+#current h2 {
+	top: 50px;
+	margin: 0;
+	padding: 20px 50px;
+
+	font-weight: 700;
+	font-size: 3em;
+	font-style: italic;
+	text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+
+#current p {
+	width: 36%;
+	float: left;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+#current img {
+	float: left;
+	max-width: 60%;
+	margin-bottom: 20px;
+}
+
+#current a {
+	color: #000;
+	font-weight: 700;
+}
+
+
+
+
+
+#about {
+	min-height: 100%;
+	background-image: url(../images/me.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+#about #about_me {
+	position: absolute;
+	bottom: 100px;
+	text-transform: none;
+	margin-left: 50px;
+}
+
+#about h2 {
+	text-shadow: 1px 1px rgba(0,0,0,0.5);
+	font-size: 2em;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+#about p {
+	margin-top: 0px;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+	width: 40%;
+}
+
+#about a {
+	font-weight: 700;
+}
+
+#about a:hover {
+	color: #ddd;
+
+}
+
